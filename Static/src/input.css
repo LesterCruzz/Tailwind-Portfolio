@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+    body {
+        @apply font-Montserrat bg-primary
+    }
+}
+
+@layer components {
+
+    .headerNav ul {
+        @apply flex gap-4 text-dark;
+    }
+
+
+    .contact__box {
+        @apply gap-7 bg-dark p-6 
+    }
+    .contact__box input {
+        @apply lg:h-14 py-4 bg-transparent border-b-primary border-b-2 text-light outline-none
+    }
+    .contact__box textarea {
+        @apply bg-transparent border-b-primary border-b-2 outline-none text-light
+    }
+    .contact ul i {
+        @apply text-2xl mb-10
+    }
+}
+
+@layer utilities {
+    .btn {
+        @apply p-4 inline-block text-xl w-[10rem] text-center
+    }
+    .bg--primary {
+        @apply border-[1.5px] text-light 
+    }
+}
